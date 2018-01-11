@@ -39,4 +39,4 @@ else:
                 if number_user == number_to_guess:
                     print("Has acertado!!!")
                 else:
-                    print("Has perdido el juego, el numero era " + str(number_to_guess))
+                    print("Has perdido el juego, el numero era {}".format(str(number_to_guess)))
