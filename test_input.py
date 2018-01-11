@@ -8,4 +8,3 @@ if numero_usuario == numero_ganador:
 else:
     print ("HAS PERDIDO!!!")
 
-
