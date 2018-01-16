@@ -2,7 +2,7 @@
 Contar vocales y consonantes de una frase
 """
 
-""" FORMA 1 - CON LISTAS """
+"""  FORMA 1 - CON LISTAS  """
 
 vocales = ["a", "e", "i", "o", "u"]
 total_vocales = 0
