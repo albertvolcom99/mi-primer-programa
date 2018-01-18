@@ -1,38 +1,31 @@
 """
-Contar vocales y consonantes de una frase
+Contar vocales, consonantes, espacios, puntos y comas de una frase
 """
-
-"""  FORMA 1 - CON LISTAS  """
-
-vocales = ["a", "e", "i", "o", "u"]
-total_vocales = 0
-total_consonantes = 0
-
-phrase = input("Dime una frase: ")
-
-for i in phrase:
-    if i in vocales:
-        total_vocales += 1
-    elif i != " ":
-        total_consonantes += 1
-
-print("TOTAL DE VOCALES: {}".format(str(total_vocales)))
-print("TOTAL DE CONSONANTES: {}".format(str(total_consonantes)))
-
-""" FORMA 2 - SIN LISTAS """
 
 vocales = "aeiou"
 consonantes = "bcdfghjklmnñpqrstvwxyz"
 total_vocales = 0
 total_consonantes = 0
+total_espacios = 0
+total_comas = 0
+total_puntos = 0
 
 frase = input("Frase: ")
 
 for i in frase:
     if i in vocales:
         total_vocales += 1
-    if i in consonantes:
+    elif i in consonantes:
         total_consonantes += 1
+    elif i == " ":
+        total_espacios += 1
+    elif i == ".":
+        total_puntos += 1
+    elif i == ",":
+        total_comas += 1
 
 print("Total vocales: {}".format(total_vocales))
 print("Total consonantes: {}".format(total_consonantes))
+print("Total espacio: {}".format(total_espacios))
+print("Total puntos: {}".format(total_puntos))
+print("Total comas: {}".format(total_comas))
